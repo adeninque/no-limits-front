@@ -1,0 +1,23 @@
+@import 'styles/variables';
+
+.carousel {
+  width: 100%;
+  position: relative;
+  border-radius: .5rem;
+  overflow-y: hidden;
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  &:after {
+    display: block;
+    content: '';
+    padding: 56.25% 0 0 0;
+  }
+}

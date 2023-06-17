@@ -1,0 +1,51 @@
+@import 'styles/variables';
+
+.event {
+  height: 100%;
+  width: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $event-title-clr;
+  }
+
+  &__btn {
+    align-self: start;
+    margin: 1rem 0 0 0;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: $event-btn-clr;
+    color: $event-text-btn-clr;
+    padding: .5rem 1rem;
+  }
+}
+
+@media screen and (width < $bp-2) {
+  .event {
+    padding: 3rem;
+    &__btn, &__title {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (width < $bp-1) {
+  .event {
+    padding: 2rem;
+    &__btn, &__title {
+      font-size: 1rem;
+    }
+    &__btn {
+      margin: .5rem 0 0 0;
+    }
+  }
+}

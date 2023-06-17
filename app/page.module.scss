@@ -1,1 +1,7 @@
 @import 'styles/variables';
+
+.home {
+  &__title {
+    margin: 2rem 0 0 0;
+  }
+}
