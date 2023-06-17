@@ -13,7 +13,7 @@ const Header = () => {
     { name: 'Главная', href: '/'},
     { name: 'Ивенты', href: '#'},
     { name: 'Места', href: 'places'},
-    { name: 'Заявки', href: '#'},
+    { name: 'Заявка', href: 'application'},
   ]
 
   return (
