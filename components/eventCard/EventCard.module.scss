@@ -2,7 +2,8 @@
 
 .event {
   padding: 1rem;
-  box-shadow: $box-shadow;
+  border: 1px solid black;
+  border-radius: .5rem;
   &__btn {
     background-color: #31e7db;
     padding: .2rem .5rem;

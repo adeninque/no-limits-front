@@ -1,0 +1,61 @@
+@import 'styles/variables';
+
+.map {
+  position: relative;
+  width: 100%;
+
+  &:after {
+    content: '';
+    display: block;
+    padding: 50.25% 0 0 0;
+  }
+
+  &__body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__title {
+    margin: 2rem 0 0 0;
+  }
+}
+
+.places {
+  box-shadow: $box-shadow;
+  margin: 1rem 0 0 0;
+  &__place {
+  }
+}
+.place {
+  &__name {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  &__address {
+    margin: .2rem 0 0 0;
+    font-weight: 300;
+  }
+  &__btns {
+    margin: .5rem 0 0 0;
+    display: flex;
+    gap: .5rem;
+  }
+  &__btn {
+    padding: .2rem .5rem;
+    background-color: $place-btn-bg-clr;
+    font-size: 1rem;
+  }
+  padding: 1rem;
+}
+
+
+@media screen and (width < $bp-2) {
+  .map {
+    &:after {
+      padding: 100% 0 0 0;
+    }
+  }
+}
