@@ -4,4 +4,10 @@
   &__title {
     margin: 2rem 0 0 0;
   }
+  &__events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0 0 0;
+  }
 }

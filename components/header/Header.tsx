@@ -10,9 +10,9 @@ import {useEffect, useState} from "react";
 const Header = () => {
   const burger = useVisible()
   const menu = [
-    { name: 'Главная', href: '#'},
+    { name: 'Главная', href: '/'},
     { name: 'Ивенты', href: '#'},
-    { name: 'Места', href: '#'},
+    { name: 'Места', href: 'places'},
     { name: 'Заявки', href: '#'},
   ]
 
