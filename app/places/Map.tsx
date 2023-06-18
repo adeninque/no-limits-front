@@ -56,7 +56,7 @@ const Map = ({places}: MapProps) => {
 			      ))}
 		      </MapContainer>
 			    <h1 className={joinClasses(s.map__title, 'title')}>Места</h1>
-			    <div className={s.places}>
+			    <div className={s.places} style={{paddingBottom: "100px"}}>
 				    {places.map(place => (
 					    <div key={place.id} className={joinClasses(s.places__place, s.place)}>
 								<h2 className={s.place__name}>{place.name}</h2>

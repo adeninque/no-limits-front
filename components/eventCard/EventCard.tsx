@@ -6,9 +6,9 @@ interface EventCardProps {
   event: IEvent
 }
 
-const EventCard = ({event}: EventCardProps) => {
+const EventCard = ({ event }: EventCardProps) => {
   return (
-    <main className={s.event}>
+    <main className={s.event} style={{ marginBottom: "100px" }}>
       <h2 className={s.event__title}>{event.title}</h2>
       <Link className={s.event__btn} href={'#'}>Подробнее</Link>
     </main>
