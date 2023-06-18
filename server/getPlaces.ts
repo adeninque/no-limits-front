@@ -1,7 +1,28 @@
 import IPlace from "@/interfaces/IPlace";
 
+
+
+
 export default async function getPlaces(): Promise<IPlace[]> {
 	return [
+		{
+			lat: 42.87621, 
+			lon: 74.61444,
+			good_place: true,
+			description: "Цум, 5й Этаж детская площадка - бесплатная",
+			name: "ЦУМ «Айчурек»",
+			id: 3,
+			address: "ЦУМ «Айчурек», 155, Чуй проспект, Свердловский район, город Бишкек, 720000, Киргизия"
+		}, 
+		{
+			name: "ТехноПарк",
+			address: "Технопарк, 1/3, Анкара улица, Октябрьский район, город Бишкек, 720082, Киргизия",
+			lat: 42.85723, 
+			lon: 74.63571,
+			description: "Десткая площадка - бесплатно",
+			id: 4,
+			good_place: true
+		},
 		{
 			lat: 42.878041,
 			lon: 74.612502,

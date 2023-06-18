@@ -50,7 +50,7 @@ const Map = ({places}: MapProps) => {
 								}}
 							>
 								<Popup>
-									{place.name}
+									<b>{`${place.name}`}</b>: <p>{`${place.description}`}</p>
 								</Popup>
 							</Marker>
 			      ))}
